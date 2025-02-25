@@ -1,0 +1,126 @@
+.map_container {
+    .map_heading_list {
+        display: grid;
+        grid-template-columns: repeat(6, 6fr);
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 100px;
+        background-color: #f4f5f9;
+        padding: 20px;
+        border-radius: 10px;
+
+        hr {
+            border: none;
+            border-left: 2px solid #a0a1a37c;
+            height: 20px;
+        }
+
+        .Event,
+        .progress,
+        .arrived,
+        .order,
+        .carrier {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            margin-left: -40px;
+        }
+
+        .Event {
+            display: flex;
+            justify-content: flex-start;
+            width: 200px;
+            margin-left: -60px;
+        }
+
+    }
+
+    .shipments {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+        padding: 20px;       
+
+        .shipmentid {
+            font-weight: 600;
+        }
+        .shipment_width {
+            width: 200px;
+
+            .shipment_progress {
+                display:inline-flex;
+                gap: 10px;
+               
+                border-radius: 10px;
+                color: green;
+                padding: 10px;
+                margin-left: 30px;
+                // width: 150px;
+            }
+            .in-progress {
+                color: blue;
+                background-color: rgba(0, 0, 255, 0.274);
+              }
+              
+              .arrived {
+                color: green;
+                background-color: rgba(41, 216, 41, 0.342);
+              }
+              
+              .delayed {
+                color: rgb(196, 129, 5);
+                background-color: rgba(255, 166, 0, 0.432);
+              }
+              
+              .canceled {
+                color: red;
+                background-color: rgba(255, 0, 0, 0.459);
+              }
+              
+              .draft {
+                color: gray;
+                background-color: rgba(128, 128, 128, 0.315);
+              }
+              
+        }   
+        
+        .shipment_event {
+            width: 100px;
+            margin-left: 50px;
+        }
+        .shipment_order,
+        .shipment_arrive {
+            margin-left: 1px;
+        }
+        .shipment_arrive {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-start;
+            align-items: center;
+            width: 180px;
+            .delay {
+                display: flex;
+                gap: 5px;
+                background: rgba(255, 181, 45, 0.87);
+                padding: 5px;
+                color: rgb(146, 95, 0);
+                border-radius: 5px;
+                font-size: 12px;
+            }
+        }
+        .shipment_carrier {
+            display: flex;
+            gap: 10px;
+            border: 1px solid #e2e2e2;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 50px;
+        }
+        
+    }
+    .hrline{
+        border: none;
+        border:1px solid #afafaf3a;
+    }
+}

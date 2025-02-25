@@ -1,0 +1,155 @@
+const shippmentMap = () => {
+
+    const shipments =[
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "In Progress",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "FedEx",
+          "status": "In Progress"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Draft",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "FedEx",
+          "status": "Draft"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Arrived",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "DHL",
+          "status": "Arrived"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Canceled",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "DHL",
+          "status": "Canceled"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "In Progress",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "DHL",
+          "status": "In Progress"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Delayed",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "TNT",
+          "status": "Delayed"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Arrived",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "FedEx",
+          "status": "Arrived"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "In Progress",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "Aramex",
+          "status": "In Progress"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Arrived",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "UPS",
+          "status": "Arrived"
+        },
+        {
+          "shipment_id": "SHP-5574",
+          "shipment_event": "Arrived",
+          "expected_arrival": "04 Feb 2024",
+          "order": "Order-12567",
+          "carrier": "Regular",
+          "status": "Arrived"
+        }
+      ]
+    return (
+        <div>
+            <h1>Shipment Details</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Shipment ID</th>
+                        <th>Shipment Event</th>
+                        <th>Expected Arrival</th>
+                        <th>Order</th>
+                        <th>Carrier</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {shipments.map((shipment, index) => (
+                        <tr key={index}>
+                            <td>{shipment.shipment_id}</td>
+                            <td>{shipment.shipment_event}</td>
+                            <td>{shipment.expected_arrival}</td>
+                            <td>{shipment.order}</td>
+                            <td>{shipment.carrier}</td>
+                            <td>{shipment.status}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    )
+}
+
+export default shippmentMap
+
+
+.shipment_progress {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+          }
+          
+          .shipment_progress.in-progress {
+            color: #4caf50; /* Green for In Progress */
+          }
+          
+          .shipment_progress.arrived {
+            color: #2196f3; /* Blue for Arrived */
+            background-color: #2195f36e;
+          }
+          
+          .shipment_progress.draft {
+            color: #ff9800; /* Orange for Draft */
+          }
+          
+          .shipment_progress.canceled {
+            color: #f44336; /* Red for Canceled */
+          }
+          
+          .shipment_progress.delayed {
+            color: #ff5722; /* Deep Orange for Delayed */
+          }
+          
+
+          
+              {shipment.shipment_progress === 'Draft' && (
+                  <div className='shipment_width'>
+                  <div className='shipment_progress'>
+                    <i className="fi fi-bs-map-marker-home"></i>
+                    <p>{shipment.shipment_progress}</p>
+                  </div>
+                </div>
+                )}

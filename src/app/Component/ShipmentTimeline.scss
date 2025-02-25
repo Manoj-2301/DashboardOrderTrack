@@ -1,0 +1,15 @@
+.timeline-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .timeline_stage{
+        // border: 2px solid red;
+        width: 100px;
+       .lable_size{
+        display: flex;
+         font-size: 12px;
+       }
+    }
+    
+}

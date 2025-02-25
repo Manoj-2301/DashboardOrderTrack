@@ -1,0 +1,82 @@
+[
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "In Progress",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "FedEx",
+      "status": "In Progress"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Draft",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "FedEx",
+      "status": "Draft"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Arrived",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "DHL",
+      "status": "Arrived"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Canceled",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "DHL",
+      "status": "Canceled"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "In Progress",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "DHL",
+      "status": "In Progress"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Delayed",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "TNT",
+      "status": "Delayed"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Arrived",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "FedEx",
+      "status": "Arrived"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "In Progress",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "Aramex",
+      "status": "In Progress"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Arrived",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "UPS",
+      "status": "Arrived"
+    },
+    {
+      "shipment_id": "SHP-5574",
+      "shipment_event": "Arrived",
+      "expected_arrival": "04 Feb 2024",
+      "order": "Order-12567",
+      "carrier": "Regular",
+      "status": "Arrived"
+    }
+  ]
