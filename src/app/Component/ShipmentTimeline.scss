@@ -12,7 +12,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color:#d8d7da;
+      background-color: #d8d7da;
       // padding: 10px 8px;
       width: 30px;
       height: 30px;
@@ -23,7 +23,7 @@
 
     .line {
       width: 52px;
-      height: 7px;
+      height: 4px;
       background-color: #d8d7da;
       position: absolute;
       left: 29px;
@@ -38,4 +38,16 @@
     }
   }
 
+  .active {
+    color: #0a0518;
+  }
+
+  .active .line {
+    background-color: #0a0518;
+  }
+
+  .active .icons {
+    background-color: #0a0518;
+    color: white;
+  }
 }

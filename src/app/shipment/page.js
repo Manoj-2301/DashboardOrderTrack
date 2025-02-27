@@ -70,19 +70,19 @@ const page = () => {
                     </div>
                     {drop && (
                         <div className='dropdown'>
-                            <div className='dropzone' style={{color:"blue", cursor:"pointer"}}>
+                            <div className='dropzone' style={{ color: "blue", cursor: "pointer" }}>
                                 <i className="fi fi-rr-progress-complete"></i>
                                 <p>IN Progress</p>
                             </div>
-                            <div className='dropzone' style={{color:"green", cursor:"pointer"}}>
+                            <div className='dropzone' style={{ color: "green", cursor: "pointer" }}>
                                 <i className="fi fi-bs-map-marker-home"></i>
                                 <p>Arived</p>
                             </div>
-                            <div className='dropzone' style={{color:"rgb(196, 129, 5)", cursor:"pointer"}}>
+                            <div className='dropzone' style={{ color: "rgb(196, 129, 5)", cursor: "pointer" }}>
                                 <i className="fi fi-sr-triangle-warning"></i>
                                 <p>Delayed</p>
                             </div>
-                            <div className='dropzone' style={{color:"grey", cursor:"pointer"}}>
+                            <div className='dropzone' style={{ color: "grey", cursor: "pointer" }}>
                                 <i className="fi fi-bs-blueprint"></i>
                                 <p>Draft</p>
                             </div>
@@ -96,7 +96,7 @@ const page = () => {
                     <div className='hide'>Hide</div>
                 </div>
                 <div className='search_manage'>
-                    <i className="fi fi-sr-garage"></i>
+                    <i className="fi fi-rr-table-layout"></i>
                     <p>Manage Table</p>
                 </div>
             </div>

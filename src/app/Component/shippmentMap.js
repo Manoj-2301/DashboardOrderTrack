@@ -1,5 +1,6 @@
 import './shipStyle.scss'
 import Stages from '../Component/deliveryStage'
+import Image from 'next/image'
 const shippmentMap = () => {
 
   const shipments = [
@@ -10,7 +11,11 @@ const shippmentMap = () => {
       "expected_arrival": "27 Feb 2025",
       "order": "Order-12567",
       "carrier": "FedEx",
-      delivery_icon: <i className="fi fi-brands-fedex"></i>,
+      delivery_icon: <Image
+        src="/FedEx-logo.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "In Progress"
     },
     {
@@ -20,7 +25,11 @@ const shippmentMap = () => {
       "expected_arrival": "03 Mar 2025",
       "order": "Order-12567",
       "carrier": "FedEx",
-      delivery_icon: <i className="fi fi-brands-fedex"></i>,
+      delivery_icon: <Image
+        src="/FedEx-logo.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "Draft",
       "time": "Delay"
 
@@ -32,6 +41,11 @@ const shippmentMap = () => {
       "expected_arrival": "28 Feb 2025",
       "order": "Order-12567",
       "carrier": "DHL",
+      delivery_icon: <Image
+        src="/dhl.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "Arrived"
     },
     {
@@ -41,6 +55,11 @@ const shippmentMap = () => {
       "expected_arrival": "28 Feb 2025",
       "order": "Order-12567",
       "carrier": "DHL",
+      delivery_icon: <Image
+        src="/dhl.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "Canceled"
     },
     {
@@ -50,7 +69,11 @@ const shippmentMap = () => {
       "expected_arrival": "04 Feb 2025",
       "order": "Order-12567",
       "carrier": "DHL",
-      delivery_icon:"",
+      delivery_icon: <Image
+        src="/dhl.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "In Progress"
     },
     {
@@ -60,8 +83,13 @@ const shippmentMap = () => {
       "expected_arrival": "28 Feb 2025",
       "order": "Order-12567",
       "carrier": "TNT",
+      delivery_icon: <Image
+        src="/tnt.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "Delayed",
-      time:'Delay'
+      time: 'Delay'
     },
     {
       "shipment_id": "SHP-5570",
@@ -70,7 +98,11 @@ const shippmentMap = () => {
       "expected_arrival": "28 Feb 2025s",
       "order": "Order-12567",
       "carrier": "FedEx",
-      delivery_icon: <i className="fi fi-brands-fedex"></i>,
+      delivery_icon: <Image
+        src="/FedEx-logo.png"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "Arrived"
     },
     {
@@ -80,6 +112,11 @@ const shippmentMap = () => {
       "expected_arrival": "04 Mar 2025",
       "order": "Order-12567",
       "carrier": "Aramex",
+      delivery_icon: <Image
+        src="/ara.webp"
+        alt=""
+        width={20}
+        height={20} />,
       "status": "In Progress",
       "time": "Delay"
 
@@ -91,6 +128,11 @@ const shippmentMap = () => {
       "expected_arrival": "05 Mar 2025",
       "order": "Order-12567",
       "carrier": "UPS",
+      delivery_icon: <Image
+        src="/ups.svg"
+        alt=""
+        width={20}
+        height={20} />,
     },
     {
       "shipment_id": "SHP-5504",
@@ -100,33 +142,70 @@ const shippmentMap = () => {
       "order": "Order-12567",
       "carrier": "Regular",
       "time": "Delay"
-    }
+    },
+    {
+      "shipment_id": "SHP-5560",
+      "shipment_event": "event",
+      "shipment_progress": "Arrived",
+      "expected_arrival": "05 Mar 2025",
+      "order": "Order-12567",
+      "carrier": "UPS",
+      delivery_icon: <Image
+        src="/ups.svg"
+        alt=""
+        width={20}
+        height={20} />,
+    },
   ]
   return (
     <div className='map_container'>
       <div className='map_heading_list'>
         <div className='shipid'>
           <p>Shipment ID</p>
+          <div className='caret'>
+            <i className="fi fi-br-caret-up"></i>
+            <i className="fi fi-br-caret-down"></i>
+          </div>
         </div>
         <div className='Event'>
           <hr />
           <p>Shipment Event</p>
+          <div className='caret'>
+            <i className="fi fi-br-caret-up"></i>
+            <i className="fi fi-br-caret-down"></i>
+          </div>
         </div>
         <div className='progress'>
           <hr />
           <p>Shipment Progress</p>
+          <div className='caret'>
+            <i className="fi fi-br-caret-up"></i>
+            <i className="fi fi-br-caret-down"></i>
+          </div>
         </div>
         <div className='arrived'>
           <hr />
           <p>Expected arrived </p>
+          <div className='caret'>
+            <i className="fi fi-br-caret-up"></i>
+            <i className="fi fi-br-caret-down"></i>
+          </div>
         </div>
         <div className='order'>
           <hr />
           <p>Order</p>
+          <div className='caret'>
+            <i className="fi fi-br-caret-up"></i>
+            <i className="fi fi-br-caret-down"></i>
+          </div>
         </div>
         <div className='carrier' >
           <hr />
           <p>Carrier</p>
+          <div className='caret'>
+            <i className="fi fi-br-caret-up"></i>
+            <i className="fi fi-br-caret-down"></i>
+          </div>
         </div>
       </div>
       <div>
@@ -142,7 +221,7 @@ const shippmentMap = () => {
               {shipment.shipment_progress === 'In Progress' && (
                 <div className='shipment_width'>
                   <div className='shipment_progress in-progress'>
-                    <i className="fi fi-rr-progress-complete"></i>
+                  <i className="fi fi-rr-time-quarter-past"></i>
                     <p>{shipment.shipment_progress}</p>
                   </div>
                 </div>
@@ -192,8 +271,8 @@ const shippmentMap = () => {
                 <p>{shipment.order}</p>
               </div>
               <div className='shipment_carrier'>
-                <p>{shipment.delivery_icon}</p>
-                <p>{shipment.carrier}</p>
+                <p className='logo_img'>{shipment.delivery_icon}</p>
+                <p className='shi_carrier'>{shipment.carrier}</p>
               </div>
             </div>
             <hr className='hrline' />

@@ -13,11 +13,14 @@
             justify-content: center;
             align-items: center;
             gap: 20px;
+
             p {
                 font-size: 24px;
                 font-weight: 500;
             }
-            .fi-rr-menu-dots,.fi-sr-progress-download {
+
+            .fi-rr-menu-dots,
+            .fi-sr-progress-download {
                 color: #797b7e;
                 font-size: 18px;
             }
@@ -33,10 +36,17 @@
             border: none;
             color: white;
             background-color: #ff7009;
-            border-top: 2px solid #a14300;
+            border-top: 1.5px solid #a14300;
+            border-left: 1.5px solid #a14300;
+            box-shadow: 0 1.5px 2px #fffffe8c inset,
+                2px 0 2px rgba(255, 255, 255, 0.137) inset,
+                -1.001px 0px 2px rgba(255, 255, 255, 0.575) inset,
+                1.5px 1.5px 0px #a14300;
 
             .add {
                 font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.05rem;
             }
         }
     }
@@ -53,7 +63,7 @@
             justify-content: center;
             align-items: center;
             gap: 30px;
-            color: #a0a1a3;            
+            color: #a0a1a3;
 
             .first {
                 color: black;
@@ -161,7 +171,8 @@
                     border-radius: 15px;
                     border: none;
                     border: 1px solid #a0a1a360;
-                    font-size: 18px;
+                    font-size: 17px;
+
                     &::placeholder {
                         padding-left: 20px;
                     }
@@ -181,6 +192,10 @@
                 color: white;
                 padding: 8px 13px;
                 border-radius: 10px;
+                border-top: 1px solid #151122 ;
+                box-shadow: 0 1.5px 2px #fffffe4b inset,
+                2px 0 2px rgba(255, 255, 255, 0.137) inset,
+                1.5px 1.5px 0px #1f1a2f;
             }
 
             .search_shipment {
@@ -192,6 +207,7 @@
                 padding: 8px 13px;
                 border-radius: 10px;
                 position: relative;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.151);
             }
 
             .dropdown {
@@ -221,6 +237,8 @@
                 border: 1px solid #a0a1a3;
                 padding: 8px 13px;
                 border-radius: 10px;
+                box-shadow: 0 2px 3px rgba(0, 0, 0, 0.144);
+
             }
 
             .hide {
