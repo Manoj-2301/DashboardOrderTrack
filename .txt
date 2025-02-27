@@ -153,3 +153,41 @@ export default shippmentMap
                   </div>
                 </div>
                 )}
+
+
+                  .in-progress {
+                color: blue;
+                background-color: rgba(47, 47, 253, 0.308);
+                font-size: 16px;
+                font-weight: 500;
+                font-size: 14px;
+
+              }
+              
+              .arrived {
+                color:#1b6321;
+                background-color:#d3ffd5;
+                font-size: 14px;
+
+              }
+              
+              .delayed {
+                color: rgb(196, 129, 5);
+                background-color: rgba(255, 187, 61, 0.432);
+                font-size: 14px;
+
+              }
+              
+              .canceled {
+                color:#75241b;
+                background-color:#ffe6e6;
+                font-size: 14px;
+                font-weight: 500;
+              }
+              
+              .draft {
+                color: rgb(99, 99, 99);
+                background-color: #f3f4f9;
+                font-size: 14px;
+
+              }

@@ -1,15 +1,41 @@
-.timeline-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    .timeline_stage{
-        // border: 2px solid red;
-        width: 100px;
-       .lable_size{
-        display: flex;
-         font-size: 12px;
-       }
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: 100px;
+
+  .timeline_stage {
+
+    // border: 2px solid red;
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#d8d7da;
+      // padding: 10px 8px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 13px;
+      position: relative;
     }
-    
+
+    .line {
+      width: 52px;
+      height: 7px;
+      background-color: #d8d7da;
+      position: absolute;
+      left: 29px;
+    }
+
+    width: 100px;
+
+    .lable_size {
+      display: flex;
+      gap: 20px;
+      font-size: 12px;
+    }
+  }
+
 }

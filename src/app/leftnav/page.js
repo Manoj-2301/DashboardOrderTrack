@@ -7,7 +7,7 @@ const page = () => {
         <div className='left'>
             <div className='left_nav_menu'>
                 <div className='first_para'>
-                    <p className='menu_firstpara'>Workspace</p>
+                    <p className='menu_firstpara'>WORKSPACE</p>
                     <i className="fi fi-br-menu-burger"></i>
                 </div>
                 <div className='menu order'>
@@ -17,20 +17,20 @@ const page = () => {
                     </div>
                 </div>
                 <div className='menu shipment'>
-                    <Link href="/sideContent">Shipment</Link>
+                    <Link href="/shipment">Shipment</Link>
                     <div className='shipment_numb'>
                         <p>New 8</p>
                     </div>
                 </div>
                 <div className='menu return'>
-                    <p>return & refund</p>
+                    <p>Return & Refund</p>
                     <div>
                         <p className='drop_menu'>4</p>
                     </div>
                 </div>
                 <div className='setting_card'>
                     <div className='setting'>
-                        <p>Setting</p>
+                        <p>SETTINGS</p>
                     </div>
                     <div className=''>
                         <p>Custom Tracking Page</p>

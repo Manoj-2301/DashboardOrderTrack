@@ -1,12 +1,12 @@
 import { FaBox, FaTruck, FaMapMarkerAlt, FaLaptop } from "react-icons/fa";
 import "./ShipmentTimeline.scss";
 
-const ShipmentTimeline = ({ progress }) => {
+const ShipmentTimeline = () => {
   const stages = [
-    { icon: <FaBox />, label: "Package" },
-    { icon: <FaLaptop />, label: "Processing" },
-    { icon: <FaTruck />, label: "In-Transit" },
-    { icon: <FaMapMarkerAlt />, label: "Delivered" },
+    { icon: <FaBox /> },
+    { icon: <FaLaptop /> },
+    { icon: <FaTruck /> },
+    { icon: <FaMapMarkerAlt /> },
   ];
 
   return (
@@ -15,10 +15,10 @@ const ShipmentTimeline = ({ progress }) => {
         <div key={index} className="timeline_stage">
           <div className="icons">
             {stage.icon}
+            {index < stages.length - 1 && <div className="line"></div>}
           </div>
-          <p className="lable_size">{stage.label}</p>         
         </div>
-      ))}
+      ))} 
     </div>
   );
 };

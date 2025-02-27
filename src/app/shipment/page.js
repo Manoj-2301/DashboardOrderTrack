@@ -1,8 +1,13 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import './sideStyle.scss'
 import Shipment from '../Component/shippmentMap'
 
 const page = () => {
+    const [drop, setdrop] = useState(false)
+    const Drop = () => {
+        setdrop(prevState => !prevState);
+    };
     return (
         <div className='side_main'>
             <div className='side_content'>
@@ -31,9 +36,9 @@ const page = () => {
                         <p>Arrived</p>
                     </div>
                     <hr className='horView' />
-                    <div className='side_second_menu second'>
+                    <div className='side_second_menu  clr'>
                         <i className="fi fi-br-plus"></i>
-                        <p>View</p>
+                        <p className='second'>View</p>
                     </div>
                 </div>
                 <div className='side_setting'>
@@ -56,26 +61,46 @@ const page = () => {
                     </div>
                     <hr />
                     <div className='search_date'>
-                        <p>2 Feb -14 Feb </p>
+                        <p>2 Feb - 14 Feb </p>
                         <i className="fi fi-rs-angle-small-down"></i>
                     </div>
-                    <div className='search_shipment'>
+                    <div className='search_shipment' onClick={Drop}>
                         <p>All Shipment Status</p>
                         <i className="fi fi-rs-angle-small-down"></i>
                     </div>
+                    {drop && (
+                        <div className='dropdown'>
+                            <div className='dropzone' style={{color:"blue", cursor:"pointer"}}>
+                                <i className="fi fi-rr-progress-complete"></i>
+                                <p>IN Progress</p>
+                            </div>
+                            <div className='dropzone' style={{color:"green", cursor:"pointer"}}>
+                                <i className="fi fi-bs-map-marker-home"></i>
+                                <p>Arived</p>
+                            </div>
+                            <div className='dropzone' style={{color:"rgb(196, 129, 5)", cursor:"pointer"}}>
+                                <i className="fi fi-sr-triangle-warning"></i>
+                                <p>Delayed</p>
+                            </div>
+                            <div className='dropzone' style={{color:"grey", cursor:"pointer"}}>
+                                <i className="fi fi-bs-blueprint"></i>
+                                <p>Draft</p>
+                            </div>
+                        </div>
+                    )}
                     <div className='search_filter'>
                         <p>Advance Filters</p>
                         <i className="fi fi-rs-angle-small-down"></i>
                     </div>
                     <hr />
-                    <div>Hide</div>
+                    <div className='hide'>Hide</div>
                 </div>
                 <div className='search_manage'>
                     <i className="fi fi-sr-garage"></i>
                     <p>Manage Table</p>
                 </div>
             </div>
-            <Shipment/>
+            <Shipment />
         </div>
     )
 }

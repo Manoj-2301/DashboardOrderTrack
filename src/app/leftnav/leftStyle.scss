@@ -1,4 +1,9 @@
 .left {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 15%;
     padding: 20px;
     .left_nav_menu {
@@ -10,12 +15,15 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 15px;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         color: #a0a1a3;
         font-size: 18px;
         .menu_firstpara {
             color: #6c6b6d;
-            font-weight: 600;
+            font-weight: 500;
+        }
+        .fi-br-menu-burger{
+            color: #0a0812;
         }
     }
     .menu {
@@ -25,20 +33,24 @@
         padding: 10px 15px;
         margin-bottom: 2px;
         color: #a0a1a3;
-        font-size: 15px;
+        font-size: 16px;
         border: 2px solid transparent;
         box-sizing: border-box;
         border-radius: 20px;
         transition: border-color 0.3s ease;
+        letter-spacing: 0.05rem;
+        font-weight: 500;
         &:hover {
             border-color: #71726f98;
             border-radius: 20px;
+            font-weight: 500;
             color: black;
         }
         .drop_menu{
             background-color: #f0f1f5;
                 padding:5px  10px;
                 border-radius: 10px;
+                font-size: 14px;
         }
     }
     .shipment {
@@ -49,6 +61,7 @@
             padding: 5px 10px;
             border-radius: 10px;
             color: white;
+            font-size: 14px;
         }        
     }
     .setting_card{
@@ -58,8 +71,12 @@
         margin-top: 20px;
         padding: 10px 15px;
         color: #a0a1a3;
+        font-size: 16px;
         .setting{
-            color: black;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.05rem;
+            color: #5d5c5e;
         }
     }
     .Drop{
@@ -67,7 +84,7 @@
         flex-direction: column;
         padding: 10px 15px;
         gap: 10px;
-        margin-top: 500px;
+        margin-top: 470px;
         .drop_word{
             color: blue;
         }
